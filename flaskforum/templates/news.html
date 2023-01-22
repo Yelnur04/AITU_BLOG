@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for new, content in context %}
+        <div class="card text-bg-secondary mb-3">
+          <div class="card-header">New</div>
+          <div class="card-body">
+            <h5 class="card-title">{{new}}</h5>
+            <p class="card-text">{{content}}</p>
+          </div>
+        </div>
+    {% endfor %}
+{% endblock content %}
